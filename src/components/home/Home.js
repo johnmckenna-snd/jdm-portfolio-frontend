@@ -67,9 +67,9 @@ const Home = () => {
 					<HomeH1>{object.line1}</HomeH1>
 					<HomeH1>{object.line2}</HomeH1>
 				</HomeCard>
-			)
-		})
-	}
+			);
+		});
+	};
 	return (
 		<HomeWrapper>
 			{homeCards()}
