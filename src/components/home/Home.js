@@ -38,27 +38,40 @@ const HomeH1 = styled.h1`
 
 const homeCardContent = [
 	{
-		href: '/sound-design',
+		href: '/ux_ui-design',
 		line1: 'ux/ui',
 		line2: 'design'
 	},
 	{
+		href: '/web-development',
+		line1: 'web',
+		line2: 'development'
+	},
+	{
 		href: '/sound-design',
-		line1: 'ux/ui',
+		line1: 'sound',
 		line2: 'design'
+	},
+	{
+		href: '/cad-drafting',
+		line1: 'cad',
+		line2: 'drafting'
 	}
 ];
 
 const Home = () => {
 	const homeCards = () => {
-		return <h1>Yaaay</h1>
+		return homeCardContent.map((object, index) => {
+			return (
+				<HomeCard key={index} href={object.href}>
+					<HomeH1>{object.line1}</HomeH1>
+					<HomeH1>{object.line2}</HomeH1>
+				</HomeCard>
+			)
+		})
 	}
 	return (
 		<HomeWrapper>
-			<HomeCard href="/sound-design">
-				<HomeH1>ux/ui</HomeH1>
-				<HomeH1>design</HomeH1>
-			</HomeCard>
 			{homeCards()}
 		</HomeWrapper>
 	);
