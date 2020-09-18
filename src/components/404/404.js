@@ -45,7 +45,7 @@ const E404 = () => {
 			<E404Card>
 				<E404H1>aw, poop. - 404 error</E404H1>
 				<E404P>No going back now, click below to go home!</E404P>
-				<RoundedButton href={handleClick} children="Home" />
+				<RoundedButton onClick={handleClick} children="Home" />
 			</E404Card>
 		</E404Wrapper>
 	);
