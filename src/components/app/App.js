@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import Nav from '../nav/Nav';
+import Router from '../router/Router';
 import colors from '../../styles/colors';
 import fonts from '../../styles/fonts';
 
@@ -30,6 +31,7 @@ const App = () => {
 		<Fragment>
 			<GlobalStyle />
 			<Nav />
+			<Router />
 		</Fragment>
 	);
 };
