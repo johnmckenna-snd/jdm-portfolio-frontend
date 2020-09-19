@@ -17,7 +17,7 @@ const NavH1 = styled.h1`
 	color: ${colors.grey3};
 	font-weight: ${fonts.bold.weight};
 	font-size: 26px;
-	margin-right: 24px;
+	margin-right: 40px;
 	margin-top: 46px;
 `;
 
@@ -33,7 +33,7 @@ const Nav = () => {
 		<NavWrapper>
 			<NavH1>john</NavH1>
 			<NavH1>mckenna</NavH1>
-			<NavP>sound designer + web designer</NavP>
+			<NavP>sound + web designer</NavP>
 		</NavWrapper>
 	);
 };

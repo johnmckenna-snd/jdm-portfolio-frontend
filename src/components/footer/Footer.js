@@ -10,7 +10,7 @@ const FooterWrapper = styled.div`
 	left: 0;
 	width: 100%;
 	height: 40px;
-	margin-left: 40px;
+	margin-left: 30px;
 	justify-content: center;
 `;
 
