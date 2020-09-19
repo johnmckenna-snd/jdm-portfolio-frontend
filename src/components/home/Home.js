@@ -15,6 +15,7 @@ const HomeWrapper = styled.div`
 const HomeCard = styled(A)`
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	width: 350px;
 	height: 130px;
 	background: linear-gradient(90deg, ${colors.purple1_70} 0%, ${colors.blue1_70} 100%);
@@ -23,9 +24,25 @@ const HomeCard = styled(A)`
 	border: none;
 	text-decoration: none;
 	line-height: .9;
+	transition: background 0.4s ease-in-out;
+	z-index: 1;
 
-	&:hover {
-		background: ${colors.purple1_70};
+	&:hover::before {
+		opacity: 1;
+	}
+
+	&::before {
+		position: absolute;
+		border-radius: 10px;
+	  content: "";
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background: linear-gradient(45deg, ${colors.purple1_70} 0%, ${colors.blue1} 100%);
+	  z-index: -1;
+	  transition: opacity 0.5s linear;
+	  opacity: 0;
 	}
 `;
 

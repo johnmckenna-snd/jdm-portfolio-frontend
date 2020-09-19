@@ -24,7 +24,7 @@ const NavH1 = styled.h1`
 const NavP = styled.p`
 color: ${colors.grey4};
 font-weight: ${fonts.regular.weight};
-font-size: 10px;
+font-size: 11px;
 margin-left: 46px;
 `;
 

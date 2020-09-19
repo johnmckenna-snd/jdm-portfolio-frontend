@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import Nav from '../nav/Nav';
 import Router from '../router/Router';
+import Footer from '../footer/Footer.js';
 import colors from '../../styles/colors';
 import fonts from '../../styles/fonts';
 
@@ -32,6 +33,7 @@ const App = () => {
 			<GlobalStyle />
 			<Nav />
 			<Router />
+			<Footer />
 		</Fragment>
 	);
 };
