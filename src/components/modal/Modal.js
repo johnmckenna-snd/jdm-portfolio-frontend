@@ -51,6 +51,7 @@ const ModalCloseButton = styled.button`
 	cursor: pointer;
 	border: none;
 	background: none;
+	outline: none;
 `;
 
 const ModalCloseX = styled.span`
