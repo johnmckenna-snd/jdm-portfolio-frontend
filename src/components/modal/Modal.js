@@ -10,7 +10,7 @@ const ModalOverlay = styled.div`
 	z-index: 1040;
 	width: 100vw;
 	height: 100vh;
-	background-color: ${colors.rgba.grey3};
+	background-color: ${colors.grey3};
 	opacity: .5;
 `;
 
@@ -29,10 +29,10 @@ const ModalWrapper = styled.div`
 
 const ModalContainer = styled.div`
 	z-index: 100;
-	background: ${colors.rgba.grey1};
+	background: ${colors.grey2};
 	position: relative;
 	margin: 1.75rem auto;
-	border-radius: 30px;
+	border-radius: 10px;
 	width: 30%;
 	flex: 1 1;
 	padding: 2rem;
@@ -55,7 +55,7 @@ const ModalCloseButton = styled.button`
 
 const ModalCloseX = styled.span`
 	&:hover {
-		color: ${colors.rgba.pink1};
+		color: ${colors.purple1};
 	}
 `;
 

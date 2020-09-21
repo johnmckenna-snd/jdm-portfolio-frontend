@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import FooterLink from './FooterLink.js';
+import FooterButton from './FooterButton.js';
+import Modal from '../modal/Modal';
+import useModal from '../modal/useModal';
 import colors from '../../styles/colors';
 
 const FooterWrapper = styled.div`
@@ -21,13 +25,16 @@ const FooterP = styled.p`
 `;
 
 const Footer = () => {
+	const {isShowing, toggle} = useModal();
+
 	return (
 		<FooterWrapper>
-			<FooterP>contact</FooterP>
+			<FooterButton children="contact" onClick={toggle} />
 			<FooterP>+</FooterP>
-			<FooterP>jdmsounddesign.com</FooterP>
+			<FooterLink href="https://www.jdmsounddesign.com" children="jdmsounddesign.com" />
 			<FooterP>+</FooterP>
-			<FooterP>isitstillapandemic.com</FooterP>
+			<FooterLink href="https://www.isitstillapandemic.com" children="isitstillapandemic.com" />
+			<Modal isShowing={isShowing} hide={toggle} children="Modal" />
 		</FooterWrapper>
 	);
 };
