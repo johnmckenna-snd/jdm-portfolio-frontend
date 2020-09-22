@@ -1,0 +1,51 @@
+import React from 'react';
+import styled from 'styled-components';
+import colors from '../../styles/colors';
+
+const LoadingSpinnerSmall = () => (
+	<Spinner viewBox="0 0 50 50">
+		<circle
+			className="path"
+			cx="25"
+			cy="25"
+			r="20"
+			fill="none"
+			strokeWidth="2"
+    />
+	</Spinner>
+);
+
+const Spinner = styled.svg`
+  animation: rotate 1.5s linear infinite;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+
+  & .path {
+    stroke: ${colors.purple1_70};
+    stroke-linecap: round;
+    animation: dash 3s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 1000;
+      stroke-dashoffset: 1;
+    }
+    50% {
+      stroke-dasharray: 500, 1500;
+      stroke-dashoffset: -75;
+    }
+    100% {
+      stroke-dasharray: 1, 1000;
+      stroke-dashoffset: -200;
+    }
+  }
+`;
+
+export default LoadingSpinnerSmall;
