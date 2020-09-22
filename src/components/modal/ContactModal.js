@@ -33,25 +33,23 @@ const EmailRegexValidator = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)
 const EmailContactModal = () => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
-	const [subject, setSubject] = useState('');
 	const [message, setMessage] = useState('');
 	const [formError, setFormError] = useState(false);
 	const [sending, setSending] = useState(false);
 	const [sent, setSent] = useState(false);
 
 	console.log('email in modal', email);
-	console.log('subject in modal', subject);
 	console.log('message in modal', message);
 
 	const handleClick = async (e) => {
 		e.preventDefault();
-		if (!name || !email || !subject || !message) setFormError(true);
-		console.log('submit!', name, email, subject, message);
+		if (!name || !email || !message) setFormError(true);
+		console.log('submit!', name, email, message);
 		setSending(true);
 		try {
-			const result = await axios.post(apiUrl, { 'name': name, 'email': email, 'subject': subject, 'message': message });
+			const result = await axios.post(apiUrl, { 'name': name, 'email': email, 'content': message });
 			console.log(result);
-			if (result.data.serverResponse === 'Email sent!') return [setSending(false), setSent(true)];
+			if (result.status === 200) return [setSending(false), setSent(true)];
 		} catch (err) {
 			console.log(err);
 		}
@@ -65,7 +63,6 @@ const EmailContactModal = () => {
 					<EmailContactForm>
 						<FormInput label="name" setState={setName} height="15%" />
 						<FormInput label="email" setState={setEmail} height="15%" regexValidator={EmailRegexValidator} />
-						<FormInput label="subject" setState={setSubject} height="15%" />
 						<FormTextArea label="message" setState={setMessage} height="55%" />
 						{formError ? <ErrorP>Please fill out all fields and make sure they are valid</ErrorP> : ''}
 						{sending ? <LoadingSpinnerSmall /> : <RoundedButton onClick={handleClick} children="Send!" />}
