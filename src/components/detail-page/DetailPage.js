@@ -104,7 +104,8 @@ const DetailPage = ({header, cardContent}) => {
 	const [animate, setAnimate] = useState(false);
 
 	useEffect(() => {
-		setAnimate(true);
+		setTimeout(() => setAnimate(true), 15);
+		console.log('useEffect in DetailPage triggered');
 	}, []);
 	const handleClick = (e) => {
 		e.preventDefault();

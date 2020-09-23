@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { A } from 'hookrouter';
+import { navigate } from 'hookrouter';
+import { Transition } from 'react-transition-group';
 import colors from '../../styles/colors';
 
 const HomeWrapper = styled.div`
@@ -10,9 +11,23 @@ const HomeWrapper = styled.div`
 	width: 750px;
 	height: 300px;
 	margin: 160px auto 0px auto;
+	transition: 1s;
+	transform: translateX(${({ state }) => {
+		switch (state) {
+			case 'entering':
+				return '0';
+			case 'entered':
+				return '0';
+			case 'exiting':
+				return '-2000px';
+			case 'exited':;
+				return '-2000px';
+		};
+	}});
+	timing: cubic-bezier(0, 0.575, 0.565, 1.000);
 `;
 
-const HomeCard = styled(A)`
+const HomeCard = styled.button`
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -26,6 +41,7 @@ const HomeCard = styled(A)`
 	line-height: .9;
 	transition: background 0.4s ease-in-out;
 	z-index: 1;
+	outline: none;
 
 	&:hover::before {
 		opacity: 1;
@@ -77,20 +93,38 @@ const homeCardContent = [
 ];
 
 const Home = () => {
+	const [animate, setAnimate] = useState(false);
+
+	useEffect(() => {
+		setTimeout(() => setAnimate(true), 15);
+		console.log('useEffect in home triggered');
+	}, []);
+
 	const homeCards = () => {
 		return homeCardContent.map((object, index) => {
 			return (
-				<HomeCard key={index} href={object.href}>
+				<HomeCard key={index} onClick={(e) => {
+					e.preventDefault();
+					setAnimate(false);
+					setTimeout(() => navigate(object.href), 500);
+				}}>
 					<HomeH1>{object.line1}</HomeH1>
 					<HomeH1>{object.line2}</HomeH1>
 				</HomeCard>
 			);
 		});
 	};
+
 	return (
-		<HomeWrapper>
-			{homeCards()}
-		</HomeWrapper>
+		<Transition in={animate} timeout={500}>
+			{(state) => (
+				// state change: exited -> entering -> entered -> exiting -> exited
+				<HomeWrapper state={state}>
+					{homeCards()}
+				</HomeWrapper>
+			)}
+		</Transition>
+
 	);
 };
 
