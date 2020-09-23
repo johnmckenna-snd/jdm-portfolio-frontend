@@ -42,6 +42,7 @@ const HomeWrapper = styled.div`
 		height: 100%;
 		flex-direction: column;
 		flex-wrap: nowrap;
+		flex: 1;
 	}
 `;
 
@@ -69,7 +70,7 @@ const HomeCard = styled.button`
 
 	@media (max-width: 700px) {
 		width: 80%;
-		height: 40%;
+		height: 100px;
 	}
 
 	&:hover::before {
@@ -145,7 +146,7 @@ const Home = () => {
 	};
 
 	return (
-		<Transition in={animate} timeout={500}>
+		<Transition in={animate} timeout={500} id="transition">
 			{(state) => (
 				// state change: exited -> entering -> entered -> exiting -> exited
 				<HomeWrapper state={state}>
