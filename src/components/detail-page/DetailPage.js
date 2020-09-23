@@ -25,7 +25,7 @@ const DetailPageWrapper = styled.div`
 				return '2000px';
 		};
 	}});
-	timing: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+	timing: cubic-bezier(0, 0.575, 0.565, 1.000);
 
 `;
 
