@@ -25,6 +25,24 @@ const HomeWrapper = styled.div`
 		};
 	}});
 	timing: cubic-bezier(0, 0.575, 0.565, 1.000);
+
+	@media (max-height: 700px) {
+		margin: 80px auto 0px auto;
+	}
+
+	@media (max-width: 1300px) {
+		margin: 80px auto 0px auto;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@media (max-width: 700px) {
+		margin: 30px auto 0px auto;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
 `;
 
 const HomeCard = styled.button`
@@ -42,6 +60,17 @@ const HomeCard = styled.button`
 	transition: background 0.4s ease-in-out;
 	z-index: 1;
 	outline: none;
+
+	@media (max-width: 1300px) {
+		width: 40%;
+		height: 35%;
+		margin-top: 0;
+	}
+
+	@media (max-width: 700px) {
+		width: 80%;
+		height: 40%;
+	}
 
 	&:hover::before {
 		opacity: 1;

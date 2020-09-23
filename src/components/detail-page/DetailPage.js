@@ -41,7 +41,7 @@ const DetailPageHeaderWrapper = styled.div`
 `;
 
 const DetailPageBackButton = styled.button`
-	position: absolute;
+	position: fixed;
 	margin: -14px 0 0 -100px;
 	border: none;
 	background: transparent;

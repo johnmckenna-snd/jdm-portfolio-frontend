@@ -5,7 +5,7 @@ import routes from './routes';
 import E404 from '../404/404';
 
 const RouterWrapper = styled.div`
-	margin: auto;
+	margin: 0 auto 40px auto;
 `;
 
 const Router = () => {

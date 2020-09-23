@@ -11,19 +11,24 @@ const GlobalStyle = createGlobalStyle`
 	${normalize}
 	html {
 		height: 100%;
+		margin: 0;
+		background: ${colors.grey1};
+		background: linear-gradient(90deg, ${colors.green1} 0%, ${colors.yellow1} 100%);
+		background-repeat: repeat;
 	}
 	body {
 		font-family: ${fonts.fontFamily};
 		font-weight: ${fonts.regular.weight};
 		font-style: ${fonts.regular.style};
 		font-size: 14px;
-		background: ${colors.grey1};
-		background: linear-gradient(90deg, ${colors.green1} 0%, ${colors.yellow1} 100%);
+		width: 100%;
+		height: 100%;
 	}
 
 	#root {
 		width: 100%;
 		height: 100%;
+		overflow-y: scroll;
 	}
 `;
 
