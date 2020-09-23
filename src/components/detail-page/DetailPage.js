@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { navigate } from 'hookrouter';
+import { Transition } from 'react-transition-group';
 import { ReactComponent as BackArrow } from '../../img/back-arrow.svg';
 import colors from '../../styles/colors';
 
@@ -10,6 +12,21 @@ const DetailPageWrapper = styled.div`
 	width: 1080px;
 	height: 100%;
 	margin: 20px auto 0px auto;
+	transition: 1s;
+	transform: translateX(${({ state }) => {
+		switch (state) {
+			case 'entering':
+				return '0';
+			case 'entered':
+				return '0';
+			case 'exiting':
+				return '2000px';
+			case 'exited':;
+				return '2000px';
+		};
+	}});
+	timing: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+
 `;
 
 const DetailPageHeaderWrapper = styled.div`
@@ -43,7 +60,7 @@ const BackArrowStyled = styled(BackArrow)`
 	}
 
 	&:active {
-		fill: ${colors.purple1_70};
+		fill: ${colors.purple1};
 	}
 
 
@@ -72,25 +89,61 @@ const DetailPageCard = styled.div`
 	border-radius: 10px;
 	margin: 10px;
 	border: none;
+	overflow: hidden;
 
 `;
 
-const DetailPage = ({header, cards}) => {
+const DetailPageCardH1 = styled.h1`
+	font-size: 32px;
+	margin: 12px 0px 0px 28px;
+	padding: 0px;
+	color: ${colors.grey3};
+`;
+
+const DetailPage = ({header, cardContent}) => {
+	const [animate, setAnimate] = useState(false);
+
+	useEffect(() => {
+		setAnimate(true);
+	}, []);
+	const handleClick = (e) => {
+		e.preventDefault();
+		setAnimate(false);
+		setTimeout(() => navigate('/'), 500);
+	};
+
+	const cards = () => {
+		return (
+			cardContent.map((obj) => {
+				return (
+					<DetailPageCard key={obj.heading}>
+						<DetailPageCardH1>{obj.heading}</DetailPageCardH1>
+					</DetailPageCard>
+				);
+			})
+		);
+	};
+
+	console.log('animate', animate);
+
 	return (
-		<DetailPageWrapper>
-			<DetailPageBackButton>
-				<BackArrowStyled />
-			</DetailPageBackButton>
-			<DetailPageHeaderWrapper>
-				<DetailPageH1>{header}</DetailPageH1>
-			</DetailPageHeaderWrapper>
-			<DetailPageCardWrapper>
-				<DetailPageCard />
-				<DetailPageCard />
-				<DetailPageCard />
-				<DetailPageCard />
-			</DetailPageCardWrapper>
-		</DetailPageWrapper>
+		<Transition in={animate} timeout={500}>
+			{(state) => (
+				// state change: exited -> entering -> entered -> exiting -> exited
+				<DetailPageWrapper state={state}>
+					<DetailPageBackButton onClick={handleClick}>
+						<BackArrowStyled />
+					</DetailPageBackButton>
+					<DetailPageHeaderWrapper>
+						<DetailPageH1>{header}</DetailPageH1>
+					</DetailPageHeaderWrapper>
+					<DetailPageCardWrapper>
+						{cards()}
+					</DetailPageCardWrapper>
+				</DetailPageWrapper>
+			)}
+		</Transition>
+
 	);
 };
 
