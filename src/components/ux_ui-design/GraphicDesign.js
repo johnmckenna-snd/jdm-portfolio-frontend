@@ -28,6 +28,7 @@ const CardP = styled.p`
 const GraphicDesignImage = styled.img`
 	width: 50%;
 	height: 80%;
+
 	@media (max-width: 560px) {
 		margin: auto;
 	}

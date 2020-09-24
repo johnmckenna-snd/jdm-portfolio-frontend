@@ -1,32 +1,32 @@
 import React from 'react';
 import DetailPage from '../detail-page/DetailPage.js';
-import ResponsiveUIDesign from './ResponsiveUIDesign';
-import Branding from './Branding';
-import CompleteUX from './CompleteUX';
-import GraphicDesign from './GraphicDesign';
+import ReactHooks from './ReactHooks';
+import MongoDB from './MongoDB';
+import Node from './Node';
+import AWS from './AWS';
 
 const cardContent = [
 	{
-		heading: 'responsive ui design',
-		content: <ResponsiveUIDesign />
+		heading: 'react hooks',
+		content: <ReactHooks />
 	},
 	{
-		heading: 'branding',
-		content: <Branding />
+		heading: 'mongodb',
+		content: <MongoDB />
 	},
 	{
-		heading: 'complete ux',
-		content: <CompleteUX />
+		heading: 'node',
+		content: <Node />
 	},
 	{
-		heading: 'graphic design',
-		content: <GraphicDesign />
+		heading: 'aws',
+		content: <AWS />
 	}
 ];
 
 const WebDevelopment = () => {
 	return (
-		<DetailPage header="ux/ui design" cardContent={cardContent} />
+		<DetailPage header="web development" cardContent={cardContent} />
 	);
 };
 
