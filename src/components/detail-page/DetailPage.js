@@ -42,6 +42,10 @@ const DetailPageHeaderWrapper = styled.div`
 	margin: 10px 10px 20px 10px;
 	background: linear-gradient(90deg, ${colors.purple1_70} 0%, ${colors.blue1_70} 100%);
 	border-radius: 10px;
+
+	@media (max-width: 400px) {
+		margin: 10px 0px 20px 25px;
+	}
 `;
 
 const DetailPageBackButton = styled.button`
