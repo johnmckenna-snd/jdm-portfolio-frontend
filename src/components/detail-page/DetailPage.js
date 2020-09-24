@@ -27,6 +27,10 @@ const DetailPageWrapper = styled.div`
 	}});
 	timing: cubic-bezier(0, 0.575, 0.565, 1.000);
 
+	@media (max-width: 1300px) {
+		width: 80%;
+	}
+
 `;
 
 const DetailPageHeaderWrapper = styled.div`
@@ -48,6 +52,18 @@ const DetailPageBackButton = styled.button`
 	outline: none;
 	border-radius: 100px;
 	padding: 1em 1em .7em 1em;
+
+	@media (max-width: 1050px) {
+		margin: -14px 0 0 -70px;
+	}
+
+	@media (max-width: 675px) {
+		margin: -14px 0 0 -50px;
+	}
+
+	@media (max-width: 400px) {
+		margin: -14px 0 0 -40px;
+	}
 
 `;
 
@@ -78,6 +94,12 @@ const DetailPageCardWrapper = styled.div`
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 10px 0 0 0;
+
+	@media (max-width: 1300px) {
+		flex-direction: column;
+		margin: 10px auto 0 auto;
+	}
+
 `;
 
 const DetailPageCard = styled.div`
@@ -90,6 +112,11 @@ const DetailPageCard = styled.div`
 	margin: 10px;
 	border: none;
 	overflow: hidden;
+
+	@media (max-width: 675px) {
+		width: 100%;
+		margin: 10px auto 10px auto;
+	}
 
 `;
 
