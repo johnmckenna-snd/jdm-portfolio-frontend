@@ -90,6 +90,9 @@ const HomeCard = styled.button`
 	  transition: opacity 0.5s linear;
 	  opacity: 0;
 	}
+	&:active {
+		background: white;
+	}
 `;
 
 const HomeH1 = styled.h1`
