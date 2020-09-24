@@ -23,6 +23,10 @@ const NavH1 = styled.h1`
 	font-size: 26px;
 	margin-right: 40px;
 	margin-top: 46px;
+
+	@media (max-width: 500px) {
+		margin-left: 40px;
+	}
 `;
 
 const NavP = styled.p`
