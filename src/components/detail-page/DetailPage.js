@@ -131,6 +131,10 @@ const DetailPageCardH1 = styled.h1`
 	color: ${colors.grey3};
 `;
 
+const DetailPageCardContentWrapper = styled.div`
+	margin: 10px 28px 0 28px;
+`;
+
 const DetailPage = ({header, cardContent}) => {
 	const [animate, setAnimate] = useState(false);
 
@@ -150,6 +154,9 @@ const DetailPage = ({header, cardContent}) => {
 				return (
 					<DetailPageCard key={obj.heading}>
 						<DetailPageCardH1>{obj.heading}</DetailPageCardH1>
+						<DetailPageCardContentWrapper>
+						{obj.content}
+						</DetailPageCardContentWrapper>
 					</DetailPageCard>
 				);
 			})
