@@ -9,7 +9,7 @@ const ButtonStyle = styled.button`
 	border: solid;
 	border-width: .5px;
 	border-color: ${colors.grey3};
-	background-color: transparent;
+	background-image: linear-gradient(90deg, ${colors.purple1_70} 0%, ${colors.blue1_70} 100%);
 	margin: 10px auto;
 	font-size: 14px;
 	outline: none;

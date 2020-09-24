@@ -17,6 +17,10 @@ const FooterButton = styled.button`
 	&:hover {
 		color: ${colors.purple1};
 	}
+
+	@media (max-width: 500px) {
+		margin: 0 5px;
+	}
 `;
 
 const FooterTextButton = ({children, onClick}) => {

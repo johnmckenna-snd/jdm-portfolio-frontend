@@ -97,7 +97,7 @@ const HomeCard = styled.button`
 
 const HomeH1 = styled.h1`
 	font-size: 32px;
-	margin: 12px 0px 0px 28px;
+	margin: 12px auto 0px 28px;
 	padding: 0px;
 	color: ${colors.grey3};
 `;

@@ -12,6 +12,10 @@ const FooterA = styled.a`
 	&:hover {
 		color: ${colors.purple1};
 	}
+
+	@media (max-width: 500px) {
+		margin: 0 5px;
+	}
 `;
 
 const FooterLink = ({children, href}) => {

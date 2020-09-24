@@ -11,6 +11,10 @@ const NavWrapper = styled.div`
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-left: 10px;
+
+	@media (max-width: 500px) {
+		margin: auto;
+	}
 `;
 
 const NavH1 = styled.h1`
@@ -26,6 +30,10 @@ color: ${colors.grey4};
 font-weight: ${fonts.regular.weight};
 font-size: 11px;
 margin-left: 46px;
+
+@media (max-width: 500px) {
+	margin-left: 56px;
+}
 `;
 
 const Nav = () => {

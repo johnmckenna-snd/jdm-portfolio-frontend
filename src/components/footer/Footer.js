@@ -17,12 +17,20 @@ const FooterWrapper = styled.div`
 	height: 40px;
 	margin-left: 30px;
 	justify-content: center;
+
+	@media (max-width: 500px) {
+		margin: auto;
+	}
 `;
 
 const FooterP = styled.p`
 	font-size: 11px;
 	color: ${colors.grey4};
 	margin: 0 10px;
+
+	@media (max-width: 500px) {
+		margin: 0 5px;
+	}
 `;
 
 const Footer = () => {
