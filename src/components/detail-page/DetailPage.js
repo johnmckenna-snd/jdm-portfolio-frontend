@@ -64,11 +64,11 @@ const DetailPageBackButton = styled.button`
 	}
 
 	@media (max-width: 675px) {
-		margin: -14px 0 0 -50px;
+		margin: -14px 0 0 -43px;
 	}
 
 	@media (max-width: 400px) {
-		margin: -14px 0 0 -40px;
+		margin: -14px 0 0 -39px;
 	}
 
 `;

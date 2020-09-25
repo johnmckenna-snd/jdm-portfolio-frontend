@@ -1,9 +1,8 @@
 import React from 'react';
-import mappSection from '../../img/truewest_mapp_section@2x.png';
 import styled from 'styled-components';
 import colors from '../../styles/colors';
 
-const SystemDesignWrapper = styled.div`
+const DetailCardImageWrapper = styled.div`
 	display: flex;
 	flex-direction: row;
 
@@ -25,7 +24,7 @@ const CardP = styled.p`
 	}
 `;
 
-const SystemDesignImage = styled.img`
+const DetailCardImageImage = styled.img`
 	width: 50%;
 	height: 80%;
 
@@ -34,13 +33,13 @@ const SystemDesignImage = styled.img`
 	}
 `;
 
-const SystemDesign = () => {
+const DetailCardImage = ({ text, image }) => {
 	return (
-		<SystemDesignWrapper>
-			<CardP>System Design has an enormous impact on how easy it can be to translate a design to listeners. I have designed sound and communication systems for shows on Broadway and across the county.</CardP>
-			<SystemDesignImage src={mappSection} />
-		</SystemDesignWrapper>
+		<DetailCardImageWrapper>
+			<CardP>{text}</CardP>
+			<DetailCardImageImage src={image} />
+		</DetailCardImageWrapper>
 	);
 };
 
-export default SystemDesign;
+export default DetailCardImage;
