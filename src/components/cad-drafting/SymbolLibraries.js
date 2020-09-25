@@ -37,7 +37,7 @@ const SymbolLibrariesImage = styled.img`
 const SymbolLibraries = () => {
 	return (
 		<SymbolLibrariesWrapper>
-			<CardP>I have designed, configured, and deployed extensive audio/control networks. I have experience, using fiber and copper, with VLANs, trunking, switch stacks, and WAPs.</CardP>
+			<CardP>Symbol Libraries exist to make the drafters life easier. I have developed multiple libraries in Vectorworks and Omnigraffle that are used by multiple people in NYC.</CardP>
 			<SymbolLibrariesImage src={symbolLibraryScreenshot} />
 		</SymbolLibrariesWrapper>
 	);

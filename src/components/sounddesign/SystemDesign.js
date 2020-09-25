@@ -37,7 +37,7 @@ const SystemDesignImage = styled.img`
 const SystemDesign = () => {
 	return (
 		<SystemDesignWrapper>
-			<CardP>I have designed sound and communication systems for shows on Broadway and across the county. I usually do acoustical modeling then drafting and equipment specifications.</CardP>
+			<CardP>System Design has an enormous impact on how easy it can be to translate a design to listeners. I have designed sound and communication systems for shows on Broadway and across the county.</CardP>
 			<SystemDesignImage src={mappSection} />
 		</SystemDesignWrapper>
 	);

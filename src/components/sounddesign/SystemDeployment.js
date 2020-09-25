@@ -37,7 +37,7 @@ const SystemDeploymentImage = styled.img`
 const SystemDeployment = () => {
 	return (
 		<SystemDeploymentWrapper>
-			<CardP>I am experienced in deploying systems for concerts, theater, and events. I have ran crews around the country. I am a IATSE union member as a part of the ACT local.</CardP>
+			<CardP>Installing systems can make or break their functionality. I am experienced in deploying systems in for concerts, theater, and events. I am a IATSE Union Member.</CardP>
 			<SystemDeploymentImage src={singStreetRacks} />
 		</SystemDeploymentWrapper>
 	);

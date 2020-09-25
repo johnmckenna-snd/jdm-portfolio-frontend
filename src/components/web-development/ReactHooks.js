@@ -16,7 +16,7 @@ const CardP = styled.p`
 
 const ReactHooks = () => {
 	return (
-		<CardP>I have built two websites (including this one) with React Hooks. I have been working with React for 3 months, and I am familiar from start to build with create-react-app. I have used axios, Styled Components, React Router, hooks router, React Window, react transition group, and react google autocomplete.</CardP>
+		<CardP>React helps development be faster and more flexible. I have built two websites (including this one) with React Hooks. I have been working with React for 3 months, and I am familiar from start to build with create-react-app. I have used axios, Styled Components, React Router, hooks router, React Window, react transition group, and react google autocomplete.</CardP>
 	);
 };
 

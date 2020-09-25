@@ -37,7 +37,7 @@ const SignalFlowImage = styled.img`
 const SignalFlow = () => {
 	return (
 		<SignalFlowWrapper>
-			<CardP>I have designed, configured, and deployed extensive audio/control networks. I have experience, using fiber and copper, with VLANs, trunking, switch stacks, and WAPs.</CardP>
+			<CardP>Signal flows help designs be built and tested easier. I draw signal flows for nearly every show I’m on. I have experience drawing very large-scale shows.</CardP>
 			<SignalFlowImage src={signalFlowScreenshot} />
 		</SignalFlowWrapper>
 	);

@@ -16,7 +16,7 @@ const CardP = styled.p`
 
 const MongoDB = () => {
 	return (
-		<CardP>I have used MongoDB for a startup I am working with (available on request). It stores users and searches. I am currently working on aggregating over 30gb of documents to create a database for further development of the startup’s website. I have taken MongoDB 001 and 121 from MongoDB University.</CardP>
+		<CardP>MongoDB’s document formate makes it incredibly versatile and user friendly. I have used MongoDB for a startup I am working with (available on request). I am currently working on aggregating over 30gb of documents to create a database for further development of the startup’s website. I have taken MongoDB 001 and 121 from MongoDB University.</CardP>
 	);
 };
 

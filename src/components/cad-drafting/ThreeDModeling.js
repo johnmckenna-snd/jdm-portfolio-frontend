@@ -37,7 +37,7 @@ const ThreeDModelingImage = styled.img`
 const ThreeDModeling = () => {
 	return (
 		<ThreeDModelingWrapper>
-			<CardP>I am well versed in 3d modeling and 3d workflows for Vectorworks. I draft almost everything in 3d.</CardP>
+			<CardP>3D Workflows increase drawing accuracy, speed, and legibility. I have been drafting in 3D doing my own modeling for three years.</CardP>
 			<ThreeDModelingImage src={threeDModelingScreenshot} />
 		</ThreeDModelingWrapper>
 	);

@@ -16,7 +16,8 @@ const CardP = styled.p`
 	font-size: 16px;
 	color: ${colors.grey4};
 	line-height: 1.75;
-	text-align: left;
+	text-align: justify;
+	margin-right: 28px;
 	width: 50%;
 
 	@media (max-width: 560px) {
@@ -36,7 +37,7 @@ const BrandingImage = styled.img`
 const Branding = () => {
 	return (
 		<BrandingWrapper>
-			<CardP>-CakePop - The Podcast <br /> -A dark startup (references available upon request) <br /> -sndwrks LLC</CardP>
+			<CardP>Good branding can make growing a company easy. I have branded three entities: CakePop - The Podcast, a dark startup (references available upon request), and sndwrks LLC.</CardP>
 			<BrandingImage src={sndwrksFlowLogo} />
 		</BrandingWrapper>
 	);

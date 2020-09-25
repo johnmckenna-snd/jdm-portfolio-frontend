@@ -16,7 +16,7 @@ const CardP = styled.p`
 
 const ContentCreation = () => {
 	return (
-		<CardP>I have made music and sound effects for shows I have designed and assisted on. I also have experience programming surround effects like panning and moving of sounds. Audio samples available upon request. I am also a USA 829 Sound Designer</CardP>
+		<CardP>Content, especially sound, can have an outsize impact on how well the story is received. I have made music and sound effects for shows I have designed and assisted on. I also have experience programming surround effects like panning and moving sounds. Audio samples available upon request. I am also a USA 829 Sound Designer.</CardP>
 	);
 };
 

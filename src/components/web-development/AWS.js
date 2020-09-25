@@ -16,7 +16,7 @@ const CardP = styled.p`
 
 const AWS = () => {
 	return (
-		<CardP>I have deployed two websites on aws with cloud front, elastic beanstalk, s3 static-served frontends, ses, and workmail. I am versed in getting websites up and running and simple CI strategies.</CardP>
+		<CardP>Amazon Web Services is incredibly powerful, and a large portion of the web is hosted there. I have deployed two websites on aws with cloud front, elastic beanstalk, s3 static-served frontends, ses, and workmail. I am versed in getting websites up and running and simple CI strategies.</CardP>
 	);
 };
 

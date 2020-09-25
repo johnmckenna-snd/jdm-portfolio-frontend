@@ -37,7 +37,7 @@ const NetworkingImage = styled.img`
 const Networking = () => {
 	return (
 		<NetworkingWrapper>
-			<CardP>I have designed, configured, and deployed extensive audio/control networks. I have experience, using fiber and copper, with VLANs, trunking, switch stacks, and WAPs.</CardP>
+			<CardP>Networking is the backbone of modern audio systems. I have designed, configured, and deployed extensive audio/control networks using fiber and copper, with VLANs, trunking, switch stacks, and WAPs.</CardP>
 			<NetworkingImage src={networkingScreenshot} />
 		</NetworkingWrapper>
 	);

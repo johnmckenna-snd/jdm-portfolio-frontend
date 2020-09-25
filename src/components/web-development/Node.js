@@ -16,7 +16,7 @@ const CardP = styled.p`
 
 const Node = () => {
 	return (
-		<CardP>I built a node/express backend for a startup I’m working with (available on request). The server uses packages:  aws-sdk (for ses), mongodb (connecting to mongodb atlas), and node-fetch (to retrieve data from an api). I have also used node to write one serverless backend using aws-lambda to host.</CardP>
+		<CardP>Node makes writing backend servers for JavaScript Developers easy. I built a node/express backend for a startup I’m working with (available on request). The server uses packages:  aws-sdk, mongodb, and node-fetch. I have also used node to write one serverless backend using aws-lambda to host.</CardP>
 	);
 };
 
