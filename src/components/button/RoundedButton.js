@@ -6,7 +6,7 @@ const ButtonStyle = styled.button`
 	width: 40%;
 	height: 40px;
 	border-radius: 20px;
-	border: solid;
+	border: none;
 	border-width: .5px;
 	border-color: ${colors.grey3};
 	background-image: linear-gradient(90deg, ${colors.purple1_70} 0%, ${colors.blue1_70} 100%);

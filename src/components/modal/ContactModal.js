@@ -43,7 +43,7 @@ const EmailContactModal = () => {
 
 	const handleClick = async (e) => {
 		e.preventDefault();
-		if (!name || !email || !message) setFormError(true);
+		if (!name || !email || !message) return setFormError(true);
 		console.log('submit!', name, email, message);
 		setSending(true);
 		try {

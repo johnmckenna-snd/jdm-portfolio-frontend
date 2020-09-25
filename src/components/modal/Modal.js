@@ -36,6 +36,18 @@ const ModalContainer = styled.div`
 	width: 30%;
 	flex: 1 1;
 	padding: 2rem;
+
+	@media (max-width: 1300px) {
+		width: 50%;
+	}
+
+	@media (max-width: 1000px) {
+		width: 70%;
+	}
+
+	@media (max-width: 1000px) {
+		width: 70%;
+	}
 `;
 
 const ModalHeader = styled.div`
