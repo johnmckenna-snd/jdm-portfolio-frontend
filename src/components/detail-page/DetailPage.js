@@ -25,7 +25,7 @@ const DetailPageWrapper = styled.div`
 				return '2000px';
 			default:
 				return '0';
-		};
+		}
 	}});
 	timing: cubic-bezier(0, 0.575, 0.565, 1.000);
 
@@ -157,7 +157,7 @@ const DetailPage = ({header, cardContent}) => {
 					<DetailPageCard key={obj.heading}>
 						<DetailPageCardH1>{obj.heading}</DetailPageCardH1>
 						<DetailPageCardContentWrapper>
-						{obj.content}
+							{obj.content}
 						</DetailPageCardContentWrapper>
 					</DetailPageCard>
 				);

@@ -24,7 +24,7 @@ const HomeWrapper = styled.div`
 				return '-2000px';
 			default:
 				return '0';
-		};
+		}
 	}});
 	timing: cubic-bezier(0, 0.575, 0.565, 1.000);
 

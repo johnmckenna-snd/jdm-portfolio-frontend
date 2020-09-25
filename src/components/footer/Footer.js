@@ -43,7 +43,7 @@ const Footer = () => {
 			<FooterLink href="https://www.jdmsounddesign.com" children="jdmsounddesign.com" />
 			<FooterP>+</FooterP>
 			<FooterLink href="https://www.isitstillapandemic.com" children="isitstillapandemic.com" />
-			<Modal isShowing={isShowing} hide={toggle} children={<ContactModal />}/>
+			<Modal isShowing={isShowing} hide={toggle} children={<ContactModal />} />
 		</FooterWrapper>
 	);
 };
