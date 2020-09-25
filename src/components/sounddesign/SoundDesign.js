@@ -1,22 +1,26 @@
 import React from 'react';
 import DetailPage from '../detail-page/DetailPage.js';
+import ContentCreation from './ContentCreation';
+import SystemDesign from './SystemDesign';
+import SystemDeployment from './SystemDeployment';
+import Networking from './Networking';
 
 const cardContent = [
 	{
 		heading: 'content creation',
-		content: <p>card1</p>
+		content: <ContentCreation />
 	},
 	{
 		heading: 'system design',
-		content: <p>card2</p>
+		content: <SystemDesign />
 	},
 	{
 		heading: 'system deployment',
-		content: <p>card3</p>
+		content: <SystemDeployment />
 	},
 	{
 		heading: 'networking',
-		content: <p>card4</p>
+		content: <Networking />
 	}
 ];
 
