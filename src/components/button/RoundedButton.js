@@ -13,6 +13,7 @@ const ButtonStyle = styled.button`
 	margin: 10px auto;
 	font-size: 14px;
 	outline: none;
+	color: ${colors.grey4};
 
 	&:hover {
 		background-color: ${colors.grey1_40};

@@ -65,7 +65,7 @@ const EmailContactModal = () => {
 						<FormInput label="email" setState={setEmail} height="15%" regexValidator={EmailRegexValidator} />
 						<FormTextArea label="message" setState={setMessage} height="55%" />
 						{formError ? <ErrorP>Please fill out all fields and make sure they are valid</ErrorP> : ''}
-						{sending ? <LoadingSpinnerSmall /> : <RoundedButton onClick={handleClick} children="Send!" />}
+						{sending ? <LoadingSpinnerSmall /> : <RoundedButton onClick={handleClick} children="send it" />}
 					</EmailContactForm>
 				</Fragment>
 	);
