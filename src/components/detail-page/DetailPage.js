@@ -122,7 +122,7 @@ const DetailPageCard = styled.div`
 	@media (max-width: 675px) {
 		width: 100%;
 		margin: 10px auto 10px auto;
-		height: 400px;
+		height: 550px;
 	}
 
 `;
@@ -132,6 +132,10 @@ const DetailPageCardH1 = styled.h1`
 	margin: 12px 0px 0px 28px;
 	padding: 0px;
 	color: ${colors.grey3};
+
+	@media (max-width: 675px) {
+		font-size: 30px;
+	}
 `;
 
 const DetailPageCardContentWrapper = styled.div`

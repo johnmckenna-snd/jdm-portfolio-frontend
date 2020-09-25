@@ -10,7 +10,7 @@ const CardP = styled.p`
 
 	@media (max-width: 420px) {
 		line-height: 1.5;
-		margin-top: -10px;
+		margin-top: 10px;
 	}
 `;
 

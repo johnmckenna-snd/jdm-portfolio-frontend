@@ -30,6 +30,7 @@ const DetailCardImageImage = styled.img`
 
 	@media (max-width: 560px) {
 		margin: auto;
+		width: 100%;
 	}
 `;
 

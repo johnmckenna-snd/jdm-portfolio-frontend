@@ -19,7 +19,9 @@ const FooterWrapper = styled.div`
 	justify-content: center;
 
 	@media (max-width: 500px) {
-		margin: auto;
+		margin: 60px auto;
+		position: static;
+		align-self: flex-end;
 	}
 `;
 
