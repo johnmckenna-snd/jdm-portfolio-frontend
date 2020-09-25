@@ -45,7 +45,7 @@ const DetailPageHeaderWrapper = styled.div`
 	background: linear-gradient(90deg, ${colors.purple1_70} 0%, ${colors.blue1_70} 100%);
 	border-radius: 10px;
 
-	@media (max-width: 400px) {
+	@media (max-width: 600px) {
 		margin: 10px 0px 20px 25px;
 	}
 `;
@@ -122,6 +122,7 @@ const DetailPageCard = styled.div`
 	@media (max-width: 675px) {
 		width: 100%;
 		margin: 10px auto 10px auto;
+		height: 400px;
 	}
 
 `;

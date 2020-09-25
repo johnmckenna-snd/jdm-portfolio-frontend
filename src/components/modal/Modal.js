@@ -45,7 +45,7 @@ const ModalContainer = styled.div`
 		width: 70%;
 	}
 
-	@media (max-width: 1000px) {
+	@media (max-width: 600px) {
 		width: 70%;
 	}
 `;
