@@ -25,7 +25,7 @@ const CardP = styled.p`
 `;
 
 const DetailCardImageImage = styled.img`
-	width: 50%;
+	width: 45%;
 	height: 80%;
 
 	@media (max-width: 560px) {

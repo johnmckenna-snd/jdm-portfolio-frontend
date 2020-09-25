@@ -1,26 +1,28 @@
 import React from 'react';
 import DetailPage from '../detail-page/DetailPage.js';
-import ThreeDModeling from './ThreeDModeling';
-import SymbolLibraries from './SymbolLibraries';
-import Collaboration from './Collaboration';
-import SignalFlow from './SignalFlow';
+import DetailCardImage from '../detail-page/DetailCardImage';
+import DetailCardNoImage from '../detail-page/DetailCardNoImage';
+
+import threeDModelingScreenshot from '../../img/3dmodeling_screenshot@2x.png';
+import symbolLibraryScreenshot from '../../img/symbol-library-screenshot@2x.png';
+import signalFlowScreenshot from '../../img/flow_screenshot@2x.png';
 
 const cardContent = [
 	{
 		heading: '3d modeling',
-		content: <ThreeDModeling />
+		content: <DetailCardImage image={threeDModelingScreenshot} text="3D Workflows increase drawing accuracy, speed, and legibility. I have been drafting in 3D doing my own modeling for three years." />
 	},
 	{
 		heading: 'symbol libraries',
-		content: <SymbolLibraries />
+		content: <DetailCardImage image={symbolLibraryScreenshot} text="Symbol Libraries exist to make the drafters life easier. I have developed multiple libraries in Vectorworks and Omnigraffle that are used by multiple people in NYC." />
 	},
 	{
 		heading: 'collaboration',
-		content: <Collaboration />
+		content: <DetailCardNoImage text="All projects require collaboration. I understand that my job is not done once I export a plate. I am comfortable working with many different departments and disciplines to make sure that what gets drawn it what gets built." />
 	},
 	{
 		heading: 'signal flow',
-		content: <SignalFlow />
+		content: <DetailCardImage image={signalFlowScreenshot} text="Signal flows help designs be built and tested easier. I draw signal flows for nearly every show I’m on. I have experience drawing very large-scale shows." />
 	}
 ];
 
