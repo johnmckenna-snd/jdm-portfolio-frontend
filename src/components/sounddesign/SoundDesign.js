@@ -14,7 +14,7 @@ const cardContent = [
 	},
 	{
 		heading: 'system design',
-		content: <DetailCardImage image={mappSection} text="System Design has an enormous impact on how easy it can be to translate a design to listeners. I have designed sound and communication systems for shows on Broadway and across the county." />
+		content: <DetailCardImage image={mappSection} text="System Design has an enormous impact on how easy it can be to translate a design to listeners. I have designed sound and communication systems for shows on Broadway and across the country." />
 	},
 	{
 		heading: 'system deployment',

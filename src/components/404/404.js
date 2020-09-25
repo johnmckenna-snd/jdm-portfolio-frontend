@@ -9,7 +9,11 @@ const E404Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	margin-top: 70px;
+	margin-top: 70px
+
+	@media (max-width: 500px) {
+
+	}
 `;
 
 const E404Card = styled.div`
@@ -20,6 +24,11 @@ const E404Card = styled.div`
 	background-color: white;
 	background: linear-gradient(90deg, ${colors.purple1_70} 0%, ${colors.blue1_70} 100%);
 	border-radius: 10px;
+
+	@media (max-width: 500px) {
+		width: 80%;
+		height: 60%;
+	}
 `;
 
 const E404H1 = styled.h1`

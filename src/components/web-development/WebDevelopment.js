@@ -9,11 +9,11 @@ const cardContent = [
 	},
 	{
 		heading: 'mongodb',
-		content: <DetailCardNoImage text="MongoDB’s document formate makes it incredibly versatile and user friendly. I have used MongoDB for a startup I am working with (available on request). I am currently working on aggregating over 30gb of documents to create a database for further development of the startup’s website. I have taken MongoDB 001 and 121 from MongoDB University." />
+		content: <DetailCardNoImage text="MongoDB’s document formate makes it incredibly versatile and user friendly. I have used MongoDB for a startup I am working with (references available on request). I am currently working on aggregating over 30gb of documents to create a database for further development of the startup’s website. I have taken MongoDB 001 and 121 from MongoDB University." />
 	},
 	{
 		heading: 'node',
-		content: <DetailCardNoImage text="Node makes writing backend servers for JavaScript Developers easy. I built a node/express backend for a startup I’m working with (available on request). The server uses packages:  aws-sdk, mongodb, and node-fetch. I have also used node to write one serverless backend using aws-lambda to host." />
+		content: <DetailCardNoImage text="Node makes writing backend servers for JavaScript Developers easy. I built a node/express backend for a startup I’m working with (references available on request). The server uses packages:  aws-sdk, mongodb, and node-fetch. I have also used node to write one serverless backend using aws-lambda to host." />
 	},
 	{
 		heading: 'aws',
