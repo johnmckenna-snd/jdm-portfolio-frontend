@@ -18,11 +18,11 @@ const cardContent = [
 	},
 	{
 		heading: 'complete ux',
-		content: <DetailCardImage image={rfDatabase} text="I’ve developed digital products for three years now. Most of these are used in the theater industry from the start of planning, all the way through show run." />
+		content: <DetailCardImage image={rfDatabase} text="I’ve developed digital products for three years now. Most of these are used in the theater industry from the start of planning, all the way through the run of the show." />
 	},
 	{
 		heading: 'graphic design',
-		content: <DetailCardImage image={cakePop} text="All of my designs, I’ve done some form of graphic design for them. Although I have no formal graphic design training, I am continuously curious about learning more." />
+		content: <DetailCardImage image={cakePop} text="In all of my designs, I’ve done some form of graphic design for them. Although I have no formal graphic design training, I am continuously curious and always learning more." />
 	}
 ];
 

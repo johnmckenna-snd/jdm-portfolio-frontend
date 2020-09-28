@@ -18,7 +18,7 @@ const cardContent = [
 	},
 	{
 		heading: 'system deployment',
-		content: <DetailCardImage image={singStreetRacks} text="Installing systems can make or break their functionality. I am experienced in deploying systems in for concerts, theater, and events. I am a IATSE Union Member." />
+		content: <DetailCardImage image={singStreetRacks} text="Installing systems can make or break their functionality. I am experienced in deploying systems for concerts, theater, and events. I am a IATSE Union Member." />
 	},
 	{
 		heading: 'networking',

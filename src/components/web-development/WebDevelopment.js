@@ -9,7 +9,7 @@ const cardContent = [
 	},
 	{
 		heading: 'mongodb',
-		content: <DetailCardNoImage text="MongoDB’s document formate makes it incredibly versatile and user friendly. I have used MongoDB for a startup I am working with (references available on request). I am currently working on aggregating over 30gb of documents to create a database for further development of the startup’s website. I have taken MongoDB 001 and 121 from MongoDB University." />
+		content: <DetailCardNoImage text="MongoDB’s document format makes it incredibly versatile and user friendly. I have used MongoDB for a startup I am working with (references available on request). I am currently working on aggregating over 30gb of documents to create a database for further development of the startup’s website. I have taken MongoDB 001 and 121 from MongoDB University." />
 	},
 	{
 		heading: 'node',
