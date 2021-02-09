@@ -113,7 +113,7 @@ const DetailPageCard = styled.div`
 	flex-direction: column;
 	width: 520px;
 	height: 320px;
-	background: ${colors.grey2_70};
+	background: ${colors.grey5_70};
 	border-radius: 10px;
 	margin: 10px;
 	border: none;

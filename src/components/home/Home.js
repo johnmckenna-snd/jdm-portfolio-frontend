@@ -63,6 +63,7 @@ const HomeCard = styled.button`
 	transition: background 0.4s ease-in-out;
 	z-index: 1;
 	outline: none;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
 
 	@media (max-width: 1300px) {
 		width: 40%;
@@ -91,6 +92,7 @@ const HomeCard = styled.button`
 	  z-index: -1;
 	  transition: opacity 0.5s linear;
 	  opacity: 0;
+		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
 	}
 	&:active {
 		background: white;

@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 		height: 100%;
 		margin: 0;
 		background: ${colors.grey1};
-		background: linear-gradient(90deg, ${colors.green1} 0%, ${colors.yellow1} 100%);
+		background: linear-gradient(110deg, ${colors.purple2} 0%, ${colors.blue2} 100%);
 		background-repeat: repeat;
 	}
 	body {
