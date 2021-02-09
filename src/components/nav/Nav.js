@@ -14,6 +14,8 @@ const NavWrapper = styled.div`
 
 	@media (max-width: 500px) {
 		margin: auto;
+		align-items: center;
+		margin-botton: 20px;
 	}
 `;
 
@@ -25,7 +27,7 @@ const NavH1 = styled.h1`
 	margin-top: 46px;
 
 	@media (max-width: 500px) {
-		margin-left: 40px;
+		margin-left: 10px;
 	}
 `;
 

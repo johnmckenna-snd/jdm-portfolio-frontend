@@ -44,6 +44,7 @@ const DetailPageHeaderWrapper = styled.div`
 	margin: 10px 10px 20px 10px;
 	background: linear-gradient(90deg, ${colors.purple1_70} 0%, ${colors.blue1_70} 100%);
 	border-radius: 10px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
 
 	@media (max-width: 600px) {
 		margin: 10px 0px 20px 25px;
@@ -78,11 +79,13 @@ const BackArrowStyled = styled(BackArrow)`
 	fill: white;
 
 	&:hover {
-		opacity: 1;
+		opacity: .7;
+		fill: ${colors.yellow1};
 	}
 
 	&:active {
-		fill: ${colors.purple1};
+		opacity: 1;
+		fill: ${colors.yellow1};
 	}
 
 
@@ -118,6 +121,7 @@ const DetailPageCard = styled.div`
 	margin: 10px;
 	border: none;
 	overflow: hidden;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.1);
 
 	@media (max-width: 675px) {
 		width: 100%;

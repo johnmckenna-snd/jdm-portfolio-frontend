@@ -10,11 +10,12 @@ const FooterA = styled.a`
 	transition: color 0.2s ease-in-out;
 
 	&:hover {
-		color: ${colors.purple1};
+		color: ${colors.yellow1};
 	}
 
 	@media (max-width: 500px) {
-		margin: 0 5px;
+		margin: 0 2px;
+		text-align: center;
 	}
 `;
 

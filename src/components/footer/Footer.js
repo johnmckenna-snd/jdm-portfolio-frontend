@@ -19,9 +19,12 @@ const FooterWrapper = styled.div`
 	justify-content: center;
 
 	@media (max-width: 500px) {
-		margin: 60px auto;
+		margin-top: 10px;
+		margin-left: auto;
 		position: static;
 		align-self: flex-end;
+		flex-direction: column;
+		height: 110px;
 	}
 `;
 
@@ -31,7 +34,8 @@ const FooterP = styled.p`
 	margin: 0 10px;
 
 	@media (max-width: 500px) {
-		margin: 0 5px;
+		margin: 0 2px;
+		text-align: center;
 	}
 `;
 
@@ -45,6 +49,8 @@ const Footer = () => {
 			<FooterLink href="https://www.jdmsounddesign.com" children="jdmsounddesign.com" />
 			<FooterP>+</FooterP>
 			<FooterLink href="https://patents.google.com/patent/US7301455" children="look at one of my patents here" />
+			<FooterP>+</FooterP>
+			<FooterLink href="https://github.com/johnmckenna-snd" children="my github" />
 			<Modal isShowing={isShowing} hide={toggle} children={<ContactModal />} />
 		</FooterWrapper>
 	);

@@ -15,11 +15,14 @@ const FooterButton = styled.button`
 	height: 12px;
 
 	&:hover {
-		color: ${colors.purple1};
+		color: ${colors.yellow1};
 	}
 
 	@media (max-width: 500px) {
-		margin: 0 5px;
+		margin: 0 2px;
+		height: 12px;
+		text-align: center;
+		padding: 0;
 	}
 `;
 
