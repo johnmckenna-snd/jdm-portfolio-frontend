@@ -1,6 +1,6 @@
 # Welcome!!
 
-This is my Portfolio. It is a good example, I think, of my current skills in visual front end design and programming, becasue the backend is just a lambda function to send me a contact emai.
+This is my Portfolio. It is a good example, I think, of my current skills in visual front end design and programming, becasue the backend is just a lambda function to send me an email from the contact modal.
 
 ## Available Scripts
 
