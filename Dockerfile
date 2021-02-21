@@ -2,7 +2,6 @@
 FROM node:alpine as build
 WORKDIR /app
 COPY . .
-RUN npm
 RUN npm build
 
 # production environment
